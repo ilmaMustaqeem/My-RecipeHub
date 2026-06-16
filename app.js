@@ -1,4 +1,4 @@
-//  1. DEFAULT RECIPES DATA 
+ //  1. DEFAULT RECIPES DATA 
 const defaultRecipes = [
     {
         id: "rec-1",
@@ -332,7 +332,7 @@ function updateDashboard() {
     if (dashFavRecipes) dashFavRecipes.innerText = favorites.length;
 }
  
-
+ 
    
 // app shuru illu
 checkAuth();

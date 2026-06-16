@@ -28,17 +28,17 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-image: url(https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=1200); /*  फूड इमेज */
+    background-image: url(https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=1200); /*  food img*/
     background-size: cover;
     background-position: center;
-    z-index: 500; /* इसे सबसे ऊपर रखने के लिए */
+    z-index: 500; /* ise upr rkne k liy*/
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .welcome-overlay {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* फोटो के ऊपर ब्लैक शेड ताकि टेक्स्ट साफ दिखे */
+    background: rgba(0, 0, 0, 0.6); /* img k upr hlka black */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,9 +121,9 @@ body {
 .main-header .logo i { margin-right: 5px; }
 #user-display-name { font-weight: 600; color: var(--text-muted); }
 
-/* MAIN WRAPPER FLUID HEIGHT */
+/* MAIN WRAPPER  HEIGHT */
 .main-wrapper {
-    min-height: calc(100vh - 135px); /* हेडर और फुटर के बीच की जगह */
+    min-height: calc(100vh - 135px); /* header or footer k bich main area */
 }
 
 /* AUTHENTICATION PAGE */
