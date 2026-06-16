@@ -137,10 +137,10 @@ const dashTotalRecipes = document.getElementById('dash-total-recipes');
 const dashFavRecipes = document.getElementById('dash-fav-recipes');
 
 //  3. AUTHENTICATION LOGIC 
-   // new page
+   // sign up wala
 function checkAuth() {
     if (currentUser) {
-        if (welcomePage) welcomePage.classList.add('hidden'); // लॉगिन है तो वेलकम पेज छुपाओ
+        if (welcomePage) welcomePage.classList.add('hidden'); // login h to welcome page hide 
         if (authPage) authPage.classList.add('hidden');
         if (appWrapper) appWrapper.classList.remove('hidden');
         if (menuToggleBtn) menuToggleBtn.classList.remove('hidden'); 
@@ -148,7 +148,7 @@ function checkAuth() {
         renderRecipes(recipes);
         updateDashboard();
     } else {
-        // अगर लॉगिन नहीं है, तो वेलकम पेज दिखाओ और बाकी सब छुपाओ
+        // agr login nhi h to welcome page show and sb hide
         if (welcomePage) welcomePage.classList.remove('hidden');
         if (authPage) authPage.classList.add('hidden');
         if (appWrapper) appWrapper.classList.add('hidden');
@@ -331,14 +331,17 @@ function updateDashboard() {
     if (dashTotalRecipes) dashTotalRecipes.innerText = recipes.length;
     if (dashFavRecipes) dashFavRecipes.innerText = favorites.length;
 }
+ 
 
    
-// ऐप स्टार्ट करें
+// app shuru illu
 checkAuth();
- // इसे अपनी app.js के बिल्कुल लास्ट में पेस्ट कर
+
+
+ // get started wala
 if (getStartedBtn) {
     getStartedBtn.addEventListener('click', () => {
-        if (welcomePage) welcomePage.classList.add('hidden'); // वेलकम पेज छुपाओ
-        if (authPage) authPage.classList.remove('hidden');   // साइन-अप पेज दिखाओ
+        if (welcomePage) welcomePage.classList.add('hidden'); // welcome hide
+        if (authPage) authPage.classList.remove('hidden');   // sign up page sow
     });
 }
