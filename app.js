@@ -332,7 +332,7 @@ function updateDashboard() {
     if (dashFavRecipes) dashFavRecipes.innerText = favorites.length;
 }
  
- 
+  
    
 // app shuru illu
 checkAuth();

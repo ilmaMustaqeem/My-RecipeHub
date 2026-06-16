@@ -67,7 +67,7 @@ body {
 }
 
 .welcome-content p {
-    font-size: 1.1rem;
+    font-size: 1.1;
     color: var(--border);
     margin-bottom: 35px;
 }
@@ -162,6 +162,7 @@ body {
     z-index: 200; transition: left 0.3s ease; padding: 20px;
 }
 .sidebar.open { left: 0; }
+ 
 .sidebar-header {
     display: flex; justify-content: space-between; align-items: center;
     margin-bottom: 30px; padding-bottom: 15px; border-bottom: 1px solid var(--light-bg);
@@ -205,7 +206,7 @@ body {
 .dash-card h3 { color: var(--text-muted); margin-bottom: 10px; }
 .dash-card p { font-size: 2.5rem; font-weight: 800; color: var(--primary); }
 
-.main-footer { background-color: var(--dark); color: var(--white); padding: 20px 0; height: 70px; }
+.main-footer { background-color: var(--dark); color: var(--white); padding: 20px 0; height: auto; }
 .footer-content { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
 .footer-socials { display: flex; gap: 15px; }
 .footer-socials a { color: var(--border); font-size: 1.2rem; transition: color 0.2s; }
